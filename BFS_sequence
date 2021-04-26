@@ -1,0 +1,20 @@
+#sample 1
+#not sure current level
+while queue 不空：
+    cur = queue.pop()
+    for 节点 in cur的所有相邻节点：
+        if 该节点有效且未访问过：
+            queue.push(该节点)
+
+#sample 2
+#know the current level
+level = 0
+while queue 不空：
+    size = queue.size()
+    while (size --) {
+        cur = queue.pop()
+        for 节点 in cur的所有相邻节点：
+            if 该节点有效且未被访问过：
+                queue.push(该节点)
+    }
+    level ++;
